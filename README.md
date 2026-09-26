@@ -144,6 +144,109 @@ Iris-Data-Preprocessing/
 └── README.md
 ---
 
+
+
+
+
+---
+
+# Week 2 – Supervised Machine Learning Models
+
+## Project Overview
+
+In Week 2, supervised machine learning models were implemented using the Iris dataset. The main objective was to understand model training, prediction, and evaluation using Scikit-learn.
+
+The project includes both classification and regression experiments.
+
+## Machine Learning Models
+
+### Classification Models
+
+The following classification algorithms were implemented:
+
+1. Logistic Regression
+2. Decision Tree Classifier
+3. Random Forest Classifier
+4. K-Nearest Neighbors (KNN)
+
+### Regression Model
+
+5. Linear Regression
+
+Linear Regression was implemented as a separate regression experiment because the Iris `species` variable is categorical and is therefore not suitable as a regression target.
+
+For the regression task, `petal_length` was used as the continuous target variable.
+
+## Workflow
+
+The Week 2 workflow included:
+
+- Loading the Iris dataset
+- Exploring the dataset
+- Selecting features and target variables
+- Encoding the categorical target
+- Splitting data into training and testing sets
+- Training machine learning models
+- Making predictions
+- Evaluating model performance
+- Comparing classification model accuracy
+- Generating classification reports
+- Creating confusion matrices
+- Evaluating Linear Regression using regression metrics
+- Visualizing actual and predicted values
+- Saving model comparison results
+
+## Evaluation Metrics
+
+### Classification
+
+The classification models were evaluated using:
+
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- Confusion Matrix
+
+### Regression
+
+The Linear Regression model was evaluated using:
+
+- Mean Absolute Error (MAE)
+- Mean Squared Error (MSE)
+- R² Score
+
+## Model Comparison
+
+The classification models were compared using their test-set accuracy.
+
+The comparison results are stored in:
+
+`model_comparison_results.csv`
+
+## Files Added for Week 2
+
+- `iris_ml_models.ipynb` – Jupyter Notebook containing the complete machine
+  learning implementation
+- `model_comparison_results.csv` – Classification model accuracy results
+
+## Tools and Technologies
+
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+- Jupyter Notebook
+- VS Code
+- Git and GitHub
+
+## Conclusion
+
+The Week 2 project provided practical experience with supervised machine learning. Multiple classification algorithms were trained and evaluated on the Iris dataset, and their performance was compared using evaluation metrics. A separate Linear Regression experiment demonstrated regression on a continuous numerical target. The project helped demonstrate the complete workflow from data preparation and model training to prediction and evaluation.
+
+
+
 ## 👩‍💻 Author
 
 Geervani Nandi Mangalam
