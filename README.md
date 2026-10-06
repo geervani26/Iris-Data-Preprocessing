@@ -247,6 +247,117 @@ The Week 2 project provided practical experience with supervised machine learnin
 
 
 
+
+---
+
+# Week 3 – Unsupervised Learning & Model Evaluation
+
+## Overview
+
+In Week 3, the Week 2 supervised machine learning project was extended with unsupervised learning techniques, dimensionality reduction, advanced model evaluation, and hyperparameter tuning.
+
+The same Iris dataset was used to demonstrate the progression from supervised learning to unsupervised learning and advanced model evaluation techniques.
+
+## Objectives
+
+- Understand K-Means Clustering.
+- Understand Hierarchical Clustering.
+- Learn dimensionality reduction using PCA.
+- Evaluate clustering using Silhouette Score.
+- Understand and implement Cross-Validation.
+- Generate and interpret a Confusion Matrix.
+- Calculate Precision, Recall and F1-Score.
+- Evaluate multiclass classification using ROC-AUC.
+- Perform hyperparameter tuning using GridSearchCV.
+- Compare original and tuned models.
+
+## Unsupervised Learning
+
+### 1. K-Means Clustering
+
+K-Means clustering was applied to the four numerical Iris features:
+
+- Sepal Length
+- Sepal Width
+- Petal Length
+- Petal Width
+
+The features were standardized before clustering.
+
+The Elbow Method was used to examine different values of K, and three clusters were selected for the Iris dataset.
+
+### 2. Hierarchical Clustering
+
+Hierarchical Clustering was implemented using the Ward linkage method.
+
+A dendrogram was created to visualize the hierarchical relationships between observations.
+
+The resulting clusters were evaluated using the Silhouette Score.
+
+### 3. Clustering Evaluation
+
+K-Means and Hierarchical Clustering were compared using Silhouette Scores to evaluate cluster quality.
+
+## Dimensionality Reduction
+
+### Principal Component Analysis (PCA)
+
+PCA was used to reduce the four-dimensional standardized Iris dataset to two principal components.
+
+The two-dimensional representation was used to visualize the data and K-Means cluster assignments.
+
+## Advanced Model Evaluation
+
+The Logistic Regression model was further evaluated using:
+
+- 5-Fold Cross-Validation
+- Confusion Matrix
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+- Multiclass ROC-AUC
+
+Cross-validation was used to evaluate model performance across multiple data splits.
+
+## Hyperparameter Tuning
+
+GridSearchCV was used to tune the Logistic Regression model.
+
+Different values of the regularization parameter `C` were tested using 5-fold cross-validation.
+
+The best parameter configuration was selected and the tuned model was compared with the original Logistic Regression model.
+
+## Week 3 Workflow
+
+
+Iris Dataset
+      ↓
+Feature Preparation
+      ↓
+Feature Standardization
+      ↓
+K-Means Clustering
+      ↓
+Hierarchical Clustering
+      ↓
+Silhouette Score Evaluation
+      ↓
+PCA Dimensionality Reduction
+      ↓
+Cross-Validation
+      ↓
+Classification Evaluation
+      ↓
+ROC-AUC Evaluation
+      ↓
+Hyperparameter Tuning
+      ↓
+Final Model Comparison
+
+
+
+
 ## 👩‍💻 Author
 
 Geervani Nandi Mangalam
