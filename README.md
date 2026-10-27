@@ -356,7 +356,125 @@ Hyperparameter Tuning
 Final Model Comparison
 
 
+# Week 4: AI Project Deployment & Capstone
 
+## Project Title
+Iris Flower Classification — End-to-End Machine Learning Application
+
+## Overview
+Week 4 extends the Iris machine learning project by integrating model training, model serialization, a Flask application, and a web-based prediction interface. Users can enter four flower measurements and receive a predicted Iris species.
+
+## Objectives
+- Train and evaluate a machine learning classification model.
+- Save the trained model using Joblib.
+- Build a Flask web application.
+- Develop a REST-style prediction API that accepts JSON input.
+- Create a user-friendly HTML interface.
+- Test predictions and validate API inputs.
+- Prepare the project for deployment and documentation.
+
+## Technologies Used
+- Python
+- Pandas and NumPy
+- Scikit-learn
+- Flask
+- Joblib
+- HTML and CSS
+- JavaScript
+- Visual Studio Code
+
+## Dataset
+The Iris dataset contains 150 samples, four numerical features, and three flower species:
+- Setosa
+- Versicolor
+- Virginica
+
+The input features are sepal length, sepal width, petal length, and petal width.
+
+## Model Training and Evaluation
+A Logistic Regression model was trained using an 80:20 train-test split.
+
+Recorded results:
+- Training samples: 120
+- Testing samples: 30
+- Test accuracy: 93.33%
+
+The model's performance was evaluated using accuracy, precision, recall, and F1-score.
+
+## Model Serialization
+The trained machine learning pipeline is saved as:
+
+`iris_model.joblib`
+
+Joblib allows the Flask application to load the trained model without retraining it every time the application starts.
+
+## Application Features
+- Four input fields for flower measurements.
+- A prediction button.
+- A displayed predicted species.
+- A Flask prediction endpoint.
+- JSON responses from the prediction API.
+- Basic input validation and error handling.
+
+## API Endpoint
+Method: POST
+
+Endpoint:* `/predict`
+
+Example JSON request:
+```json
+{
+  "sepal_length": 5.1,
+  "sepal_width": 3.5,
+  "petal_length": 1.4,
+  "petal_width": 0.2
+}
+```
+
+Example response:
+```json
+{
+  "predicted_species": "setosa",
+  "input_measurements": {
+    "sepal_length": 5.1,
+    "sepal_width": 3.5,
+    "petal_length": 1.4,
+    "petal_width": 0.2
+  }
+}
+```
+
+## Project Files
+- `train_model.py` — trains, evaluates, and saves the model.
+- `app.py` — runs the Flask application and prediction API.
+- `iris_model.joblib` — serialized trained model.
+- `templates/index.html` — web interface.
+- `requirements.txt` — Python package dependencies.
+- `iris_dataset.csv` — original dataset.
+- `iris_ml_models.ipynb` — machine learning experiments from earlier project stages.
+
+## How to Run the Application
+
+1. Install Python.
+2. Open the project folder in VS Code.
+3. Install the required dependencies:
+
+   `python -m pip install -r requirements.txt`
+
+4. Train and save the model:
+
+   `python train_model.py`
+
+5. Start the Flask application:
+
+   `python app.py`
+
+6. Open the application in your browser:
+
+   `http://127.0.0.1:5000`
+
+## Conclusion
+Week 4 demonstrates how a trained machine learning model can be integrated into a web application. The project combines model training, evaluation, serialization, API development, and user interface design. The next stage is to deploy the application to a hosting platform and prepare the final capstone presentation.
 
 ## 👩‍💻 Author
 
